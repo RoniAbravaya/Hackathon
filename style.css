@@ -186,4 +186,14 @@ footer {
         font-size: 40px;
       }
     }
+
+    .squares-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-image: url('background.png');
+    
+        background-repeat: no-repeat;
+        background-position: center center;
+        size: 110%;
+    }
   
