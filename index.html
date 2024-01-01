@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-qdCKQ7oaz1wF4Znuh1yN4DJjhz6AKZ22R8fVNl5oeCXb9jtlpU2EiFvF+7XRzhBMZ4eSxK8f7CzUic1jI4XG0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/2f1e4f3aff.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Your Logo</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="squares-container">
+
+
+        <div class="draggable-container">
+            <div id="draggable-element" draggable="true" ondragstart="onDragstart4pinkSquare(event)" ondragend="onDragend4pinkSquare(event)" ondrag="onDrag4PinkSquare(event)">
+            </div>
+            <div id="man"></div> <!-- Add this line for the man -->
+        </div>
+
+        <div id="drop-element" 
+        ondragover="onDragOver4orange(event)"
+        ondrop="onDrop4orangeSquare(event)"
+        >
+        </div>
+
+    </div>
+
+    <section id="userInteraction">
+        <h2>Do you wanna help?</h2>
+        <div id="dragContainer">
+            <!-- Your drag and drop elements go here -->
+            <!-- Example: <div id="box" class="draggable"></div> -->
+        </div>
+        <form id="volunteerForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 VolunteerVibe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
