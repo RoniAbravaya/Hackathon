@@ -182,7 +182,7 @@ footer {
     
       #draggable-element {
         position: absolute;
-        top: 85%;
+        top: 56%;
         left: 30%;
         height: 90px;
         width: 90px;
@@ -191,7 +191,7 @@ footer {
     
       #drop-element {
         position: absolute;
-        top: 80%;
+        top: 50%;
         left: 45%;
         height: 200px;
         width: 200px;
