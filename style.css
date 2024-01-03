@@ -1,3 +1,15 @@
+
+
+.div1 {
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 2rem; /* Adjust the font size as needed */
+  color: #34495e;
+  margin-top: 40px;
+  text-align: center; /* Align the text to the center */
+  font-family: 'YourCoolFont', sans-serif; /* Replace 'YourCoolFont' with the desired cool font */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -90,7 +102,7 @@ footer {
         margin: 0;
         padding: 5px;
         font-size: 20px;
-        color: grey;
+        color: rgb(222, 165, 20);
         font-family: monospace;
         text-align: center;
       }
@@ -123,16 +135,16 @@ footer {
       #draggable-element {
         height: 90px;
         width: 90px;
-        background-color: lightcoral;
+        background-color: rgb(241, 166, 91);
         cursor: pointer;
       }
     
       .pink {
-        color: lightcoral;
+        color: rgb(213, 148, 19);
       }
     
       .orange {
-        color: orange;
+        color: #3498db;
       }
     
     
@@ -140,7 +152,7 @@ footer {
       #drop-element {
         height: 100px;
         width: 100px;
-        background-color: orange;
+        background-color: #3498db;
         /*targeting Chrome & Safari*/
         display: -webkit-flex;
         /*targeting IE10*/
@@ -170,20 +182,21 @@ footer {
     
       #draggable-element {
         position: absolute;
-        top: 10%;
+        top: 85%;
         left: 30%;
         height: 90px;
         width: 90px;
+        transform: rotate(45deg);
       }
     
       #drop-element {
         position: absolute;
-        top: 263px;
-        left: 648px;
+        top: 80%;
+        left: 45%;
         height: 200px;
         width: 200px;
-        /* visibility: hidden; */
-      }
+        opacity: 0.1;
+    }
     
       .title {
         font-size: 40px;
@@ -200,3 +213,9 @@ footer {
         size: 110%;
     }
   
+
+    #userInteraction {
+      background-color: #ecf0f1;
+      visibility: hidden;
+  }
+

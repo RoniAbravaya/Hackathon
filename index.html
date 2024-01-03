@@ -23,31 +23,23 @@
     </header>
 
 
+    <div class="div1">
+        If you're eager to lend a helping hand, simply grab the box and place it securely in the truck. Your act of kindness will make a meaningful difference and contribute to the greater good. Join us in spreading positivity and making a positive impact in the lives of others by taking part in this simple yet impactful gesture. Together, we can create a community of support and compassion, one box at a time.
+    </div>
 
     <div class="squares-container" style="background-image:url(background.png);">
-
-
         <div class="draggable-container">
-            <div id="draggable-element" draggable="true" ondragstart="onDragstart4pinkSquare(event)" ondragend="onDragend4pinkSquare(event)" ondrag="onDrag4PinkSquare(event)">
-            </div>
-            <div id="man"></div> <!-- Add this line for the man -->
+            <div id="draggable-element" draggable="true" ondragstart="onDragstart4pinkSquare(event)" ondragend="onDragend4pinkSquare(event)" ondrag="onDrag4PinkSquare(event)"></div>
+            <div id="man"></div>
         </div>
 
-        <div id="drop-element" 
-        ondragover="onDragOver4orange(event)"
-        ondrop="onDrop4orangeSquare(event)"
-        >
-        </div>
-
+        <div id="drop-element" ondragover="onDragOver4orange(event)" ondrop="onDrop4orangeSquare(event)"></div>
     </div>
 
     <section id="userInteraction">
         <h2>Do you wanna help?</h2>
-        <div id="dragContainer">
-            <!-- Your drag and drop elements go here -->
-            <!-- Example: <div id="box" class="draggable"></div> -->
-        </div>
-        <form id="volunteerForm">
+        <div id="dragContainer"></div>
+        <form id="volunteerForm" style="visibility: hidden;">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
 
